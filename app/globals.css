@@ -240,6 +240,26 @@ h1,h2,h3,.wordmark,.footer-mark,.nav-links,.nav-cta,.button,.marquee{font-family
 @media(max-width:640px){.project-modal{padding:10px}.project-modal-panel{height:calc(100vh - 20px)}.project-modal-bar{padding:14px}.project-modal-bar strong{font-size:17px}.project-modal-close{width:38px;height:38px}.project-modal-foot{padding:10px 14px}}
 @media(prefers-reduced-motion:reduce){.project-modal,.project-modal-panel{animation:none}}
 
+/* Final editorial footer */
+.footer{min-height:0!important;padding:72px 0 24px!important;background:var(--black)!important;color:var(--white);border-top:1px solid #ffffff12;background-image:radial-gradient(circle at 82% 8%,#c5ff3808,transparent 26%)!important}
+.footer>.wrap{width:min(1600px,calc(100% - 96px));min-height:0;display:flex;flex-direction:column}
+.footer-links{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;gap:clamp(30px,8vw,150px)!important;padding:0 0 110px!important}
+.footer-links>div{display:flex;flex-direction:column;align-items:flex-start}
+.footer-links span{color:#778276!important;font-size:10px!important;line-height:1.2;letter-spacing:.16em!important;text-transform:uppercase!important;margin:0 0 23px!important;font-weight:700!important}
+.footer-links a{color:var(--white)!important;font-size:15px!important;line-height:1.25;margin:6px 0!important;transition:color .2s,transform .2s!important}
+.footer-links a:hover{color:var(--lime)!important;transform:translateX(4px)!important}
+.footer-corner-mark{width:100%;display:block;text-align:right;color:var(--lime);font:700 clamp(76px,14.5vw,230px)/.68 "Space Grotesk",Arial,sans-serif;letter-spacing:-.1em;white-space:nowrap;margin:0 0 38px!important;padding-top:34px;border-top:1px solid var(--line)}
+.footer-corner-mark span{color:var(--white)}
+.footer-bottom{display:flex!important;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--line);padding-top:18px;color:#778276;font-size:10px;line-height:1.4;letter-spacing:.08em;text-transform:uppercase}
+@media(max-width:640px){
+	.footer{padding:48px 0 22px!important}
+	.footer>.wrap{width:calc(100% - 32px)}
+	.footer-links{grid-template-columns:1fr 1fr!important;gap:42px 24px!important;padding-bottom:64px!important}
+	.footer-links>div:last-child{grid-column:1/-1}
+	.footer-corner-mark{text-align:left;font-size:clamp(46px,15vw,94px);padding-top:25px;margin-bottom:28px!important}
+	.footer-bottom{display:grid!important;grid-template-columns:1fr!important;gap:8px}
+}
+
 /* Full-height closing footer */
 .footer{min-height:720px;padding-top:58px}
 .footer>.wrap{min-height:650px}

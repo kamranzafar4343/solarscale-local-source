@@ -662,7 +662,7 @@ export default function Home() {
         <div className="wrap">
           <div className="footer-links">
             <div>
-              <span>Our company</span>
+              <span>Explore</span>
               {["About", "Services", "Systems", "Tools", "Work", "Plans", "Insights", "FAQ"].map((x) => (
                 <a key={x} href={"#" + x.toLowerCase()}>
                   {x}
@@ -670,13 +670,13 @@ export default function Home() {
               ))}
             </div>
             <div>
-              <span>Support</span>
+              <span>Start a conversation</span>
               <a href="/start-a-project" target="_blank" rel="noreferrer">Start a project</a>
               <a href="#contact">Contact us</a>
               <a href="mailto:hello@solarscale.co">hello@solarscale.co</a>
             </div>
             <div>
-              <span>Social</span>
+              <span>Follow along</span>
               <a href="https://www.linkedin.com/company/solarscale/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={13} /></a>
               <a href="https://www.instagram.com/solarscale/" target="_blank" rel="noreferrer">Instagram <ArrowUpRight size={13} /></a>
               <a href="https://www.behance.net/" target="_blank" rel="noreferrer">Behance <ArrowUpRight size={13} /></a>
