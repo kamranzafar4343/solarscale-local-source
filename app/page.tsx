@@ -232,7 +232,7 @@ export default function Home() {
           <span className="brand-signal">Digital growth systems</span>
         </a>
         <nav className={menu ? "nav-links open" : "nav-links"}>
-          {["About", "Services", "Systems", "Tools", "Work", "Plans", "Insights", "FAQ"].map((x) => (
+          {["About", "Services", "Work", "Plans", "Insights", "FAQ"].map((x) => (
             <a
               key={x}
               onClick={() => setMenu(false)}
@@ -382,7 +382,7 @@ export default function Home() {
       <section className="work dark-section" id="work">
         <div className="wrap">
           <div className="work-head">
-            <p className="section-tag">05 / Our work</p>
+            <p className="section-tag">04 / Our work</p>
             <h2>Our <em>work.</em></h2>
             <p>Selected website systems for solar teams.</p>
           </div>
@@ -527,7 +527,7 @@ export default function Home() {
       <section className="process dark-section" id="process">
         <div className="wrap">
           <div className="process-head">
-            <p className="section-tag">06 / Process</p>
+            <p className="section-tag">05 / Process</p>
             <h2>We do the <em>footwork.</em></h2>
             <p className="process-intro">You bring the ambition. We take care of the moving parts from first conversation to live site.</p>
           </div>
@@ -578,7 +578,7 @@ export default function Home() {
       <section className="plans light-section" id="plans">
         <div className="wrap">
           <div className="plans-head">
-            <p className="section-tag">07 / Clear starting points</p>
+            <p className="section-tag">06 / Clear starting points</p>
             <h2>Good work should be <span>easy to enter.</span></h2>
             <p>Choose the level that matches where your business is today. Every plan starts with a focused conversation.</p>
             <small className="payment-note">50% upfront to reserve your start date. The remaining 50% is due at delivery.</small>
@@ -600,20 +600,20 @@ export default function Home() {
       </section>
       <section className="trust light-section" id="reviews">
         <div className="wrap trust-layout">
-          <div><p className="section-tag">08 / Why SolarScale</p><h2>Built for the <span>digital side of solar.</span></h2></div>
+          <div><p className="section-tag">07 / Why SolarScale</p><h2>Built for the <span>digital side of solar.</span></h2></div>
           <div className="trust-list">{trustPoints.map(([title, description], index) => <article key={title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{title}</h3><p>{description}</p></article>)}</div>
         </div>
       </section>
       <section className="insights dark-section" id="insights">
         <div className="wrap insights-layout">
-          <div><p className="section-tag">09 / Insights</p><h2>Useful thinking for <em>solar teams.</em></h2></div>
+          <div><p className="section-tag">08 / Insights</p><h2>Useful thinking for <em>solar teams.</em></h2></div>
           <div className="insight-list">{insights.map(([no, title, description]) => <article key={no}><span>{no}</span><div><h3>{title}</h3><p>{description}</p><a href="#contact">Read the idea <ArrowUpRight size={14} /></a></div></article>)}</div>
         </div>
       </section>
       <section className="faq dark-section">
         <div className="wrap faq-layout">
           <div>
-            <p className="section-tag">10 / FAQ</p>
+            <p className="section-tag">09 / FAQ</p>
             <h2>
               Clear answers.
               <br />
@@ -663,7 +663,7 @@ export default function Home() {
           <div className="footer-links">
             <div>
               <span>Explore</span>
-              {["About", "Services", "Systems", "Tools", "Work", "Plans", "Insights", "FAQ"].map((x) => (
+              {["About", "Services", "Work", "Plans", "Insights", "FAQ"].map((x) => (
                 <a key={x} href={"#" + x.toLowerCase()}>
                   {x}
                 </a>
