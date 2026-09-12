@@ -667,7 +667,7 @@ export default function Home() {
                 <a key={x} href={"#" + x.toLowerCase()}>
                   {x}
                 </a>
-              ))}
+              ))} 
             </div>
             <div>
               <span>Start a conversation</span>
